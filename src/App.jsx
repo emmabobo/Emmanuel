@@ -26,29 +26,29 @@ import Header from './Components/Header';
 function App() {
   const location = useLocation();
 
-  const pageVariants = {
-    initial: {
-      opacity: 0,
-      x: "-100vw",
-      scale: 0.8,
-    },
-    in: {
-      opacity: 1,
-      x: 0,
-      scale: 1,
-    },
-    out: {
-      opacity: 0,
-      x: "100vw",
-      scale: 1.2,
-    },
-  };
+  // const pageVariants = {
+  //   initial: {
+  //     opacity: 0,
+  //     x: "-100vw",
+  //     scale: 0.8,
+  //   },
+  //   in: {
+  //     opacity: 1,
+  //     x: 0,
+  //     scale: 1,
+  //   },
+  //   out: {
+  //     opacity: 0,
+  //     x: "100vw",
+  //     scale: 1.2,
+  //   },
+  // };
 
-  const pageTransition = {
-    type: "tween",
-    ease: "anticipate",
-    duration: 0.5,
-  };
+  // const pageTransition = {
+  //   type: "tween",
+  //   ease: "anticipate",
+  //   duration: 0.5,
+  // };
 
   return (
     <div className="bg-cover bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-800 via-black to-indigo-800">

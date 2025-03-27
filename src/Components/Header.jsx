@@ -29,7 +29,7 @@ function Header() {
 
   return (
     <div className='fixed  bg-black top-0 right-0 left-0  h-[10vh]'>
-      <nav className='h-full mx-auto flex max-w-7xl items-center justify-between px-4 md:px-6 '>
+      <div className='h-full mx-auto flex max-w-7xl items-center justify-between px-4 md:px-6 '>
         
         {/* Logo section */}
         <div onClick={handleMobileMenu} className="flex lg:flex-1">
@@ -61,10 +61,7 @@ function Header() {
           </button>
         </div>
 
-       
-
-
-      </nav>
+      </div>
     </div>
   )
 }
