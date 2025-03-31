@@ -1,8 +1,10 @@
-import { motion } from 'motion/react'; // make sure this is correctly imported
+ // make sure this is correctly imported
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 import { Link } from 'react-router';
 import logo from "../assets/LogoW.png"
 import logoText from "../assets/logowhite.png"
+// import { FaHome } from "react-icons/fa";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,10 +14,10 @@ function Header() {
   };
 
   return (
-    <div className='fixed top-0 right-0 left-0'>
-      <div className='bg-black h-[10vh] mx-auto flex max-w-7xl items-center justify-between px-4 md:px-6'>
+    <div className='fixed top-0 right-0 left-0 z-40 max-auto  bg-black '>
+      <div className='text-white h-[10vh]  mx-auto flex max-w-7xl items-center justify-between px-4 md:px-8'>
         {/* Logo section */}
-        <div className="flex lg:flex-1">
+        <div >
           <Link to="/" className="-m-1.5 p-1.5">
             {/* Uncomment the logos if necessary */}
             <span className="sr-only">La_Drogo</span>
@@ -25,27 +27,33 @@ function Header() {
         </div>
 
         {/* Menu Items for Web */}
-        <div id='webLink' className={` text-white hidden md:flex md:align-center md:h-0 md:p-0 md:text-2xl md:relative md:top-0`}>
-          <div>
-            <Link to='/' className='border-b-4 pb-3 hover:text-blue-600 hover:-translate-y-1 transition-all md:border-none md:pb-0'>
+        <div id='webLink' className={` hidden md:flex md:justify-between md:gap-8  md:item-center  md:text-1xl `}>
+          <div className='  hover:text-blue-600 hover:-translate-y-1 hover:border-b-4 md: transition-all md: '>
+            <Link to='/'  >
               Home
+             {/* <div className='p-0'>
+              <FaHome />
+             </div> */}
             </Link>
           </div>
 
-          <div>
-            <Link to='/Projects' className='w-full border-b-4 pb-3 hover:text-blue-600 hover:-translate-y-1 transition-all md:border-none md:pb-0'>
-              Projects
+          <div className='  hover:text-blue-600 hover:-translate-y-1 hover:border-b-4 transition-all md:pb-0'>
+            <Link to='/Projects' >
+              <div>
+                Projects
+              </div>
+              
             </Link>
           </div>
 
-          <div>
-            <Link to='/about' className='w-full border-b-4 pb-3 hover:text-blue-600 hover:-translate-y-1 transition-all md:border-none md:pb-0'>
+          <div className='  hover:text-blue-600 hover:-translate-y-1 hover:border-b-4 transition-all  md:pb-0'>
+            <Link to='/about' >
               About
             </Link>
           </div>
 
-          <div>
-            <Link to='/contact' className='w-full border-b-4 pb-3 hover:text-blue-600 hover:-translate-y-1 transition-all md:border-none md:pb-0'>
+          <div className='  hover:text-blue-600 hover:-translate-y-1 hover:border-b-4 transition-all  md:pb-0'>
+            <Link to='/contact' >
               Contact
             </Link>
           </div>
