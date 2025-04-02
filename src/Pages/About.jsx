@@ -6,9 +6,9 @@ import Footer from '../Components/Footer';
 
 function About() {
   return (
-    <div className="mx-auto max-w-7xl min-h-screen">
+    <div className="mx-auto max-w-7xl min-h-screen ">
         <motion.div
-            className="bg-black px-4 pt-24 pb-4 md:px-16 lg:px-24 lg:pt-40"
+            className="glossy-overlay relative top-[15vh]  lg:left-0 lg:right-0 mx-4 p-4 mb-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -201,10 +201,12 @@ function About() {
                     </motion.div>
                 </div>
             </div>
+
+            <div className=''>
+                <Footer  />
+            </div>
         </motion.div>
-        <div>
-            <Footer  />
-        </div>
+        
     </div>
   );
 }
