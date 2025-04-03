@@ -2,7 +2,10 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router';
-// import { FaHome } from "react-icons/fa";
+import logoSmall from '/assets/LogoW.png';
+import logoLarge from '/assets/logoWhite.png';
+
+
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,8 +22,8 @@ function Header() {
           <Link to="/" className="-m-1.5 p-1.5">
             {/* Uncomment the logos if necessary */}
             <span className="sr-only">La_Drogo</span>
-            <img className=" h-8 w-auto lg:hidden " src='/LogoW.png' alt="" />
-            <img className='h-5 w-auto hidden lg:block' src="/logowhite.png" alt='' />
+            <img className=" h-8 w-auto lg:hidden " src={logoSmall} alt="" />
+            <img className='h-5 w-auto hidden lg:block' src={logoLarge} alt='' />
           </Link>
         </div>
 

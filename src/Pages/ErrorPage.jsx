@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router';
 import { motion } from 'motion/react'
-import Ellipse33 from '/Ellipse33.svg'
-import Group33 from '/Group33.svg'
+import Ellipse33 from '/assets/Ellipse33.svg'
+import Group33 from '/assets/Group33.svg'
 
 
 function ErrorPage() {

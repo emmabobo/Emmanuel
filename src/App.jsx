@@ -7,7 +7,6 @@ import Home from './Pages/Home'
 import Projects from './Pages/Projects'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
-import Error from './Pages/ErrorPage'
 import ErrorPage from './Pages/ErrorPage'
 
 

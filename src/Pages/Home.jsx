@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Footer from '../Components/Footer';
 import { motion } from 'motion/react'
-import Heroimg from "/Heroimg.jpg"
+import Heroimg from "/assets/Heroimg.jpg"
 
 
 const Home = () => {

@@ -13,23 +13,24 @@
 
   } */
 
-  .bg-hero {
-    background-image: url('./assets/fire33.jpg');
+  /* .bg-hero {
+    background-image: url('/assets/fire33.jpg');
 
-  }
+  } */
+  
   
 }
 
 @layer base {
   body {
-    background-image: url("./assets/fire33.jpg");
+    background-image: url("/assets/fire33.jpg");
     background-position: center;
     background-size:auto;
     background-attachment: fixed;
-
   }
-    .glossy-overlay {
-      @apply relative inset-0 bg-black/20 backdrop-blur-xl border-2 border-white/10 rounded-4xl ;
-    }
+  .glossy-overlay {
+    @apply relative inset-0 bg-black/20 backdrop-blur-xl border-2 border-white/10 rounded-4xl ;
+  }
+    
 
 }
