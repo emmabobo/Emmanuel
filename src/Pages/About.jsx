@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';  // Fix import path to 'react-router-dom'
-import HeroImg from '../assets/Heroimg.jpg';
+import HeroImg from '/Heroimg.jpg';
 import { motion } from 'motion/react';  // Import motion from framer-motion
 import Footer from '../Components/Footer';
 

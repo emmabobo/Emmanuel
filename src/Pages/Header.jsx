@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router';
-import logo from "../assets/LogoW.png"
-import logoText from "../assets/logowhite.png"
+import logo from "/LogoW.png";
+import logoText from "/logowhite.png";
 // import { FaHome } from "react-icons/fa";
 
 function Header() {

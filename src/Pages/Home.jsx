@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import Footer from '../Components/Footer';
 import { motion } from 'motion/react'
-import Heroimg from "../assets/Heroimg.jpg"
-import { div } from 'motion/react-client';
+import Heroimg from "/Heroimg.jpg"
+
 
 const Home = () => {
   return (
