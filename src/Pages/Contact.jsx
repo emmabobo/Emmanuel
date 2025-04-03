@@ -36,10 +36,11 @@ function Contact() {
 
   return (
     <div>
-        <div id='contact' className='mx-auto max-w-7xl '>
-            <div className='min-h-[90vh] border-2  bg-black  relative top-[10vh] grid grid-cols-1 gap-32 overflow-clip'>
+        <div id='contact' className=' mx-auto max-w-7xl '>
 
-                <div className="rounded-xl  w-full border p-4 pt-8 grid grid-cols-1  md:place-items-center " >
+            <div className='glossy-overlay mx-4  md:m-8 min-h-[80vh]  relative top-[10vh] rounded-xl border-white/10 border flex flex-col'>
+
+                <div className="rounded-xl  w-full  p-4 pt-8 grid grid-cols-1  md:place-items-center " >
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
                         {" "}
                         Get In Touch
@@ -57,7 +58,7 @@ function Contact() {
                             required
                             value={formData.name}
                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                            className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                             placeholder="Name..."
                         />
                         </div>
@@ -70,7 +71,7 @@ function Contact() {
                             required
                             value={formData.email}
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                            className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                             placeholder="Example@mail.com...."
                         />
                         </div>
@@ -82,7 +83,7 @@ function Contact() {
                             required
                             value={formData.message}  
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                            className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 min-h-35 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 min-h-35 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                             placeholder={`Hello ,${formData.name ? formData.name : ''}. you can type your message here..... `}
                         />
                         </div>
@@ -91,7 +92,7 @@ function Contact() {
                             <button
                                 type="submit"
                                 disabled ={isLoading}
-                                className={`w-full md:w-[30%]  bg-blue-500 text-white py-3 px-6 rounded font-medium transition overflow-hidden ${isLoading ? 'opacity-50' : ''} hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]`}
+                                className={`w-full md:w-[40%]  bg-blue-500 text-white py-3 px-6 rounded-xl font-medium transition overflow-hidden ${isLoading ? 'opacity-50' : ''} hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]`}
                                 >
                             {isLoading ? "Sending..." : "Send Message"}
                             </button>
@@ -102,7 +103,7 @@ function Contact() {
                  {/* ............................................. */}
                 </div>
                 
-                <div className='lg:pt-16 '>
+                <div className='lg:pt-16  '>
                 <Footer  />
                 </div>
             </div>

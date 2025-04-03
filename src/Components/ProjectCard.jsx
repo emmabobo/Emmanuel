@@ -16,10 +16,10 @@ function ProjectCard({ title, description, technologies, link, images }) {
 
       <div className="flex flex-col lg:flex-row lg:items-center">
         {/* Text Section */}
-        <div className="lg:w-3/5">
+        <div className="">
           <h3 className="text-xl text-white font-bold mb-2">{title}</h3>
           <p className="text-gray-400 md:h-30 mt-4">{description}</p>
-          <div className="grid grid-cols-3 gap-2 mb-4 ">
+          <div className="grid grid-cols-3 gap-2 mb-4 lg:grid-cols-4">
             {technologies.map((tech) => (
               <span
                 key={tech}
