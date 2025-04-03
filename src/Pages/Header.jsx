@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router';
-import logo from "/LogoW.png";
-import logoText from "/logowhite.png";
 // import { FaHome } from "react-icons/fa";
 
 function Header() {
@@ -21,8 +19,8 @@ function Header() {
           <Link to="/" className="-m-1.5 p-1.5">
             {/* Uncomment the logos if necessary */}
             <span className="sr-only">La_Drogo</span>
-            <img className=" h-8 w-auto lg:hidden " src={logo} alt="" />
-            <img className='h-5 w-auto hidden lg:block' src={logoText} alt='' />
+            <img className=" h-8 w-auto lg:hidden " src='/LogoW.png' alt="" />
+            <img className='h-5 w-auto hidden lg:block' src="/logowhite.png" alt='' />
           </Link>
         </div>
 
